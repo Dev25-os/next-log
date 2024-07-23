@@ -1,6 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
@@ -16,8 +17,11 @@ export default function RootLayout({ children }) {
         <div className="navbar fixed top-0 left-0 w-full z-50">
           <Navbar />
         </div>
-        <div className="mx-auto max-w-screen-2xl px-10">
+        <div className="mx-auto max-w-screen-2xl px-10 ">
           {children}
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </body>
     </html>

@@ -5,7 +5,7 @@ import { Calendar, Clock } from "lucide-react"
 const PostCard = () => {
     return (
         <div className="w-full cursor-pointer rounded-t-xl my-3
-        grayscale hover:grayscale-0
+         hover:grayscale-0
         ">
             <div className="top ">
                 <Image src={I2} alt="post image"
@@ -13,7 +13,8 @@ const PostCard = () => {
                     height={0}
                     className="w-full h-[300px]
                     rounded-t-xl
-                    object-cover
+                    object-cover grayscale
+                    hover:grayscale-0
                     "
                 />
             </div>
@@ -51,8 +52,8 @@ const PostCard = () => {
                     Thomas
                 </span>  </p>
                 <p> • </p>
-                <div className="tag bg-sc/50 p-2 text-xs text-pc *:
-                hover:bg-sc duration-200 transition hover:text-white
+                <div className="tag bg-sc/50 p-2 text-xs text-pc 
+                hover:bg-sc duration-200 transition hover:text-white 
                 ">
                     <p>Machine</p>
                 </div>

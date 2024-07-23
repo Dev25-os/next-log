@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         pc: "#152035",
         sc: "#F08E80",
+        tc: "#152035B3",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
